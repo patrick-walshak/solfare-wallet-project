@@ -1,14 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/src/output.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solflare - Recovery Phrase</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="./src/output.css">
 </head>
-<body>
-    
-  <!-- Right Image -->
-  <img alt="create_wallet" class="css-1njenus" src="chrome-extension://bhhhlbepdkbapadjdnnojkbgioiodbic/static/assets/pencil.e6911bba.png">
+
+<body class="container mx-auto bg-[#0a0a0a] text-white min-h-screen overflow-x-hidden">
+  <main class="px-6 py-8 flex gap-12">
+    <!-- Right -->
+    <div class="flex-1 max-w-xl bg-[#0c0f14] p-10 rounded-2xl">
+      <header class="flex items-center justify-between px-6 py-4">
+        <button class="flex items-center gap-3 text-white text-lg ">
+          <a href="/index.html">
+            <i class="cursor-pointer fas fa-arrow-left"></i>
+          </a>
+          <span class="font-medium">Back</span>
+        </button>
+
+        <img src="./public/logo.cddcbfdb.svg" alt="Text_Logo">
+
+        <button class="text-gray-400 text-[3rem] ">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
+          </svg>
+
+        </button>
+      </header>
+
+      <div class="flex flex-wrap justify-center">
+        <h2 class="text-3xl font-bold mb-4">Keys to Your Kingdom</h2>
+
+        <p class="text-gray-400 text-sm leading-relaxed mb-8 text-pretty text-center">
+          This recovery phrase is your wallet's only backup. If you lose it, no one can help you access your funds. Your
+          recovery phrase is safest when written on paper and stored in a secure place.
+        </p>
+      </div>
+
+      <!-- Word Grid -->
+      <div class="bg-[#1a1a1a] rounded-2xl p-8 mb-6">
+        <div class="grid grid-cols-3 gap-6 mb-8">
+          <!-- Row 1 -->
+          <div class="flex gap-2">
+            <span class="text-gray-500 text-sm">1</span>
+            <span class="text-white">ridge</span>
+          </div>
+          <div class="flex gap-2">
+            <span class="text-gray-500 text-sm">2</span>
+            <span class="text-white">describe</span>
+          </div>
+          <div class="flex gap-2">
+            <span class="text-gray-500 text-sm">3</span>
+            <span class="text-white">short</span>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="flex gap-2">
+            <span class="text-gray-500 text-sm">4</span>
+            <span class="text-white">frame</span>
+          </div>
+          <div class="flex gap-2">
+            <span class="text-gray-500 text-sm">5</span>
+            <span class="text-white">hazard</span>
+          </div>
+          <div class="flex gap-2">
+            <span class="text-gray-500 text-sm">6</span>
+            <span class="text-white">rough</span>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="flex gap-2">
+            <span class="text-gray-500 text-sm">7</span>
+            <span class="text-white">midnight</span>
+          </div>
+          <div class="flex gap-2">
+            <span class="text-gray-500 text-sm">8</span>
+            <span class="text-white">dice</span>
+          </div>
+          <div class="flex gap-2">
+            <span class="text-gray-500 text-sm">9</span>
+            <span class="text-white">rookie</span>
+          </div>
+
+          <!-- Row 4 -->
+          <div class="flex gap-2">
+            <span class="text-gray-500 text-sm">10</span>
+            <span class="text-white">move</span>
+          </div>
+          <div class="flex gap-2">
+            <span class="text-gray-500 text-sm">11</span>
+            <span class="text-white">possible</span>
+          </div>
+          <div class="flex gap-2">
+            <span class="text-gray-500 text-sm">12</span>
+            <span class="text-white">raven</span>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex justify-between">
+          <button
+            class="bg-[#2a2a2a] hover:bg-[#333333] text-white px-6 py-3 rounded-full font-medium transition-colors">
+            Download
+          </button>
+          <button
+            class="bg-[#2a2a2a] hover:bg-[#333333] text-white px-6 py-3 rounded-full font-medium transition-colors">
+            Copy
+          </button>
+        </div>
+      </div>
+
+      <!-- Primary Action Button -->
+      <button
+        class="w-full bg-[#ffd73b] hover:bg-[#ffd11a] text-black font-semibold py-4 rounded-full mb-6 transition-colors">
+        <a href="./comfirm.html">I saved my recovery phrase</a>
+      </button>
+
+      <!-- Secondary Link -->
+      <div class="text-center">
+        <a href="#" class="text-white text-sm hover:text-gray-300 transition-colors">
+          I already have a wallet
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="flex-1 flex items-center justify-center overflow-hidden">
+      <img alt="create_wallet" class="css-1njenus" src="./public/pencil.e6911bba.png">
+    </div>
+  </main>
 </body>
+
 </html>
