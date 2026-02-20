@@ -3,11 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="/src/output.css">
     <title>Document</title>
 </head>
-<body><link rel="stylesheet" href="/src/output.css">
+<body>
     <!--Right Video -->
-      <video src="chrome-extension://bhhhlbepdkbapadjdnnojkbgioiodbic/static/assets/crown.af74b31d.mp4" autoplay="" loop="" playsinline="" preload="metadata" class="css-jk3dd5"></video>
+      <!-- <video src="chrome-extension://bhhhlbepdkbapadjdnnojkbgioiodbic/static/assets/crown.af74b31d.mp4" autoplay="" loop="" playsinline="" preload="metadata" class="css-jk3dd5"></video> -->
+
+
+     <section class="min-h-screen bg-black p-4">
+  <div class="grid grid-cols-2 gap-4 h-[95vh]">
+    
+    <!-- LEFT SIDE -->
+    <div class="bg-[#0c0f14] text-white rounded-3xl p-10 flex flex-col justify-between">
+
+      <!-- Logo -->
+      <div class="flex justify-end gap-90 items-center">
+        <img src="img/solflare-logo.svg" class="h-8" alt="">
+        <img src="img/unnamed (5).png" class="h-6" alt="">
+      </div>
+
+      <!-- Main Content -->
+      <div class="flex flex-col items-center text-center">
+        <h1 class="text-5xl font-bold mb-10 leading-tight">
+          YOUR WALLET.<br>YOUR KINGDOM.
+        </h1>
+
+        <a class="cursor-pointer" href="keyphrace.html"><button class="w-80 h-14 rounded-full bg-[#ffef46] text-black font-bold mb-4">
+          I need a new wallet
+        </button></a>
+
+        <button class="w-80 h-14 rounded-full bg-[#1e2126]">
+          I already have a wallet
+        </button>
+      </div>
+
+      <!-- Bottom Section -->
+      <div class="text-center">
+        <p class="text-gray-500 text-sm mb-4 tracking-wider">
+          OR CONTINUE WITH
+        </p>
+
+        <div class="flex justify-center gap-4">
+          <div class="flex items-center px-6 h-12 border border-gray-600 rounded-full gap-2">
+            <img class="w-5" src="img/unnamed (3).png" alt="">
+            <p>Ledger</p>
+          </div>
+
+          <div class="flex items-center px-6 h-12 border border-gray-600 rounded-full gap-2">
+            <img class="w-5" src="img/unnamed.png" alt="">
+            <p>Keystone</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="bg-[#ffef46] rounded-3xl overflow-hidden">
+      <video 
+        class="w-full h-full object-cover"
+        src="video/WhatsApp Video 2026-02-20 at 1.29.19 PM.mp4"
+        autoplay 
+        loop 
+        muted 
+        playsinline>
+      </video>
+    </div>
+
+  </div>
+</section>
 </body>
 </html>
